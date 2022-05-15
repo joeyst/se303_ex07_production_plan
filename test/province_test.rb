@@ -5,14 +5,14 @@ require_relative '../lib/province'
 require_relative '../lib/data'
 
 class ProvinceTest < Minitest::Test
+  extend Minitest::Spec::DSL
+  let(:asia) { Province.new(sample_province_data) }
 
   def test_province_shortfall
-    asia = Province.new(sample_province_data)
     assert_equal(5, asia.shortfall)
   end
 
   def test_profit_method
-    asia = Province.new(sample_province_data)
     assert_equal(230, asia.profit)
   end
 end
