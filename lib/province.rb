@@ -24,7 +24,7 @@ class Province
   end
 
   def shortfall
-    @demand - @total_production
+    @demand - @total_production * 2
   end
 
   def profit
