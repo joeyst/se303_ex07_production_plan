@@ -16,7 +16,6 @@ class ProvinceTest < Minitest::Test
     assert_equal(230, asia.profit)
   end
 
-  # Probing the Boundaries pg. 96
   describe 'no producers' do
     let(:data) {
       {
