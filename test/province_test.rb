@@ -54,4 +54,8 @@ class ProvinceTest < Minitest::Test
     assert_raises (NoMethodError) {asia.shortfall}
   end
 
+  describe 'string for producers' do
+
+  end
+
 end
