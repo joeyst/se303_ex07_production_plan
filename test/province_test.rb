@@ -55,7 +55,15 @@ class ProvinceTest < Minitest::Test
   end
 
   describe 'string for producers' do
-
+    def test_province_empty_producer_string
+      data = {
+        name: 'String producers',
+        producers: '',
+        demand: 30,
+        price: 20
+      }
+      assert_raises (NoMethodError) { Province.new(data) }
+    end
   end
 
 end
