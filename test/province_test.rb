@@ -31,5 +31,9 @@ class ProvinceTest < Minitest::Test
     def test_province_shortfall
       assert_equal(30, no_producers.shortfall)
     end
+
+    def test_province_profit
+      assert_equal(1, no_producers.profit)
+    end
   end
 end
