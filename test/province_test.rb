@@ -27,5 +27,9 @@ class ProvinceTest < Minitest::Test
       }
     }
     let(:no_producers) { Province.new(data)}
+
+    def test_province_shortfall
+      assert_equal(31, no_producers.shortfall)
+    end
   end
 end
