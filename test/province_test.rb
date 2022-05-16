@@ -15,4 +15,9 @@ class ProvinceTest < Minitest::Test
   def test_profit_method
     assert_equal(230, asia.profit)
   end
+
+  # Probing the Boundaries pg. 96
+  describe 'no producers' do
+    
+  end
 end
