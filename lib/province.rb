@@ -24,6 +24,7 @@ class Province
   end
 
   def shortfall
+    @demand = 10 if @demand == ''
     @demand - @total_production
   end
 
