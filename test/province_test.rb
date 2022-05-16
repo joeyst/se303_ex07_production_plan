@@ -33,7 +33,7 @@ class ProvinceTest < Minitest::Test
     end
 
     def test_province_profit
-      assert_equal(1, no_producers.profit)
+      assert_equal(0, no_producers.profit)
     end
   end
 end
