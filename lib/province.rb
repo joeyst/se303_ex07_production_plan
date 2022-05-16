@@ -11,7 +11,7 @@ class Province
     @total_production = 0
     @demand = doc[:demand]
     @price = doc[:price]
-    doc[:producers].each { |d| add_producer(Producer.new(self, d)) } if doc[:producers].class != String
+    doc[:producers].each { |d| add_producer(Producer.new(self, d)) }
   end
 
   def add_producer(arg)
