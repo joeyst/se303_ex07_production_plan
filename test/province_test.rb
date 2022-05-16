@@ -18,6 +18,14 @@ class ProvinceTest < Minitest::Test
 
   # Probing the Boundaries pg. 96
   describe 'no producers' do
-    
+    let(:data) {
+      {
+      name: 'No producers',
+      producers: [],
+      demand: 30,
+      price: 20
+      }
+    }
+    let(:no_producers) { Province.new(data)}
   end
 end
